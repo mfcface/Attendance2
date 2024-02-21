@@ -81,6 +81,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>Opencv\build\include;ArcFace\inc;Opencv\build\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>Opencv\build\x64\vc16\lib;ArcFace\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -121,6 +123,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>opencv_world490.lib;opencv_world490d.lib;libarcsoft_face_engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -188,6 +191,8 @@
   <ItemGroup>
     <ClInclude Include="Attendance.h" />
     <ClInclude Include="AttendanceDlg.h" />
+    <ClInclude Include="CButton2.h" />
+    <ClInclude Include="FaceTool.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -196,6 +201,8 @@
   <ItemGroup>
     <ClCompile Include="Attendance.cpp" />
     <ClCompile Include="AttendanceDlg.cpp" />
+    <ClCompile Include="CButton2.cpp" />
+    <ClCompile Include="FaceTool.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
