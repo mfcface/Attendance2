@@ -82,7 +82,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>Opencv\build\include;ArcFace\inc;Opencv\build\include\opencv2;$(IncludePath)</IncludePath>
-    <LibraryPath>Opencv\build\x64\vc16\lib;ArcFace\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>Opencv\build\x64\vc16\lib;ArcFace\lib;ArcFace\lib\X64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
