@@ -192,6 +192,10 @@
     <ClInclude Include="Attendance.h" />
     <ClInclude Include="AttendanceDlg.h" />
     <ClInclude Include="CButton2.h" />
+    <ClInclude Include="C_Information.h" />
+    <ClInclude Include="C_Login.h" />
+    <ClInclude Include="C_Regist.h" />
+    <ClInclude Include="C_Show.h" />
     <ClInclude Include="FaceTool.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
@@ -202,6 +206,10 @@
     <ClCompile Include="Attendance.cpp" />
     <ClCompile Include="AttendanceDlg.cpp" />
     <ClCompile Include="CButton2.cpp" />
+    <ClCompile Include="C_Information.cpp" />
+    <ClCompile Include="C_Login.cpp" />
+    <ClCompile Include="C_Regist.cpp" />
+    <ClCompile Include="C_Show.cpp" />
     <ClCompile Include="FaceTool.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
